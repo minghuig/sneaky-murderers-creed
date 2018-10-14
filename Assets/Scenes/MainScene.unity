@@ -113,85 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &318562497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 318562499}
-  - component: {fileID: 318562498}
-  m_Layer: 5
-  m_Name: LightKing
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &318562498
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 318562497}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f3ce8ecc0dcd64adfb1afcd1419ce3c3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.6, y: 0.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!224 &318562499
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 318562497}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.64, y: 1.64, z: 1.64}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.22, y: 2.9}
-  m_SizeDelta: {x: 1, y: 1}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +186,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &544484416 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1724104016480036, guid: ab718009aa830417181c76a6cc9dceaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 902314149}
+--- !u!114 &544484417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 544484416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d2ae298ed2a49a182bb9e38e324e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomLeftSquareBottomLeft: {fileID: 1781377573}
+  bottomLeftSquareTopLeft: {fileID: 842055761}
+  chessPiecesContainer: {fileID: 613428383}
+--- !u!4 &613428383 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4146462640022522, guid: ab718009aa830417181c76a6cc9dceaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 902314149}
+--- !u!4 &842055761 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4223629055574860, guid: ab718009aa830417181c76a6cc9dceaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 902314149}
 --- !u!1001 &902314149
 Prefab:
   m_ObjectHideFlags: 0
@@ -303,6 +253,18 @@ Prefab:
     - target: {fileID: 4105248120592376, guid: ab718009aa830417181c76a6cc9dceaf, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724104016480036, guid: ab718009aa830417181c76a6cc9dceaf, type: 2}
+      propertyPath: m_Name
+      value: ChessBoardView
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724104016480036, guid: ab718009aa830417181c76a6cc9dceaf, type: 2}
+      propertyPath: m_TagString
+      value: ChessBoardView
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223629055574860, guid: ab718009aa830417181c76a6cc9dceaf, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab718009aa830417181c76a6cc9dceaf, type: 2}
@@ -367,7 +329,36 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1057963987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1057963988}
+  m_Layer: 0
+  m_Name: Services
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1057963988
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1057963987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1947442031}
+  m_Father: {fileID: 1140350069}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1140350068
 GameObject:
@@ -377,6 +368,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1140350069}
+  - component: {fileID: 1140350071}
   m_Layer: 0
   m_Name: _SCRIPTS_
   m_TagString: Untagged
@@ -390,13 +382,28 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1140350068}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -0.36, z: 0}
-  m_LocalScale: {x: 0.92331374, y: 0.9233139, z: 1.1541424}
-  m_Children: []
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1057963988}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1140350071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1140350068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3fcfc7c459c406aa33f0810ac53dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pieces: []
+  chessPiecePrefab: {fileID: 114955299917484492, guid: 949b9c2dd41d047d28f01c9d2a45123a,
+    type: 2}
 --- !u!1 &1462632587
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,10 +567,67 @@ RectTransform:
   m_Children:
   - {fileID: 1462632588}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!4 &1781377573 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4980270796776658, guid: ab718009aa830417181c76a6cc9dceaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 902314149}
+--- !u!1 &1947442030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1947442031}
+  - component: {fileID: 1947442032}
+  m_Layer: 0
+  m_Name: ChessSprites
+  m_TagString: ChessSprites
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1947442031
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947442030}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1057963988}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1947442032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947442030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f633891f384759a776af0573c5d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whitePawnSprite: {fileID: 21300000, guid: c47a89edcd20c4008a546f5f533aa45f, type: 3}
+  blackPawnSprite: {fileID: 21300000, guid: a4f25b842b6b74ba287304b82dd20d55, type: 3}
+  whiteBishopSprite: {fileID: 21300000, guid: 2568f6e13e4d9413bb10a923e5c9dd18, type: 3}
+  blackBishopSprite: {fileID: 21300000, guid: 58a4ecb6f45c94b268339e75f54b17e1, type: 3}
+  whiteKnightSprite: {fileID: 21300000, guid: eacb5c1998d9c4693ac0928e594a4ece, type: 3}
+  blackKnightSprite: {fileID: 21300000, guid: b309fd591b2ed40519edd8dcbe00f430, type: 3}
+  whiteRookSprite: {fileID: 21300000, guid: e9bd73c968bdc4551b999b491b94437a, type: 3}
+  blackRookSprite: {fileID: 21300000, guid: 33074965a42e6490ea8178ef9503949d, type: 3}
+  whiteQueenSprite: {fileID: 21300000, guid: 708d9c640ecf4443fa050e6d183a74d2, type: 3}
+  blackQueenSprite: {fileID: 21300000, guid: 7c4c74dfae5364f2f818244dd2a71ded, type: 3}
+  whiteKingSprite: {fileID: 21300000, guid: f3ce8ecc0dcd64adfb1afcd1419ce3c3, type: 3}
+  blackKingSprite: {fileID: 21300000, guid: ee0cafe84a48846a386c1e81f145ac03, type: 3}
