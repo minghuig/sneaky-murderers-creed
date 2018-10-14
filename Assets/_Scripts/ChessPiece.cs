@@ -9,7 +9,7 @@ public class ChessPiece : MonoBehaviour {
 
     private SpriteRenderer spriteRenderer;
 
-    void Start() {
+    void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
