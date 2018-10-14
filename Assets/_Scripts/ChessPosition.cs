@@ -15,27 +15,23 @@ public class ChessPosition {
         this.column = ChessPositionTranslator.GetColumn(position);
     }
 
-    public string rowDisplay {
-        get {
-            return (row + 1).ToString();
-        }
-    }
-
-    public string columnDisplay {
-        get {
-            return _getColumnLetter();
-        }
+    public Vector3 GetWorldPosition() {
+        return Services.ChessBoardView.GetWorldPosition(this);
     }
 
     public override string ToString() {
         return columnDisplay + rowDisplay;
     }
 
-    private string _getColumnLetter() {
-        return ((char) ((int) 'A') + column).ToString();
+    public string columnDisplay {
+        get {
+            return ((char) ((int) 'A') + column).ToString();
+        }
     }
 
-    public Vector3 GetWorldPosition() {
-        return Services.ChessBoardView.GetWorldPosition(this);
+    public string rowDisplay {
+        get {
+            return (row + 1).ToString();
+        }
     }
 }

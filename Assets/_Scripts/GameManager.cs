@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
-    public List<ChessPiece> pieces = new List<ChessPiece>();
     public ChessPiece chessPiecePrefab;
+
+    public List<ChessPiece> pieces = new List<ChessPiece>();
 
     // MAIN ENTRY POINT
     void Start() {
@@ -74,5 +75,7 @@ public class GameManager : MonoBehaviour {
     private void _AddChessPiece(Team team, Chessman chessman, string position) {
         ChessPiece chessPiece = Instantiate<ChessPiece>(chessPiecePrefab, Services.ChessBoardView.chessPiecesContainer);
         chessPiece.Initialize(team, chessman, new ChessPosition(position));
+
+        pieces.Add(chessPiece);
     }
 }

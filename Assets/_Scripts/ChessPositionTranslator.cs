@@ -1,3 +1,4 @@
+// Translates A1 -> (0, 0), and H8 -> (7, 7) for use in a 2D grid.
 public static class ChessPositionTranslator {
     public static ChessPosition GetChessPosition(string position) {
         int column = ChessPositionTranslator._GetColumn(position[0]);
