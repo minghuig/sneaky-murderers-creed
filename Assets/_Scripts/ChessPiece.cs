@@ -13,6 +13,10 @@ public class ChessPiece : MonoBehaviour {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+    void Update() {
+      Refresh();
+    }
+
     public void Initialize(Team team, Chessman chessman, ChessPosition position) {
         this.team = team;
         this.chessman = chessman;
@@ -48,6 +52,7 @@ public class ChessPiece : MonoBehaviour {
 
     private void _RefreshChessPieceSprite() {
         spriteRenderer.sprite = Services.ChessSprites.GetChessmanSprite(chessman, team);
+        spriteRenderer.color = new Color(Random.Range(0.0f,1.0f), Random.Range(0.0f,1.0f), Random.Range(0.0f,1.0f));
     }
 
     private void _RefreshChessPiecePosition() {
